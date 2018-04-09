@@ -6,7 +6,7 @@ import BucketItem from './BucketItem'
 const grid = 8;
 
 const getListStyle = isDraggingOver => ({
-  background: isDraggingOver ? 'lightblue' : '',
+  background: isDraggingOver ? '#6b879e' : '',
   padding: grid,
 });
 
