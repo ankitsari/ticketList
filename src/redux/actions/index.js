@@ -22,7 +22,7 @@ export const getBucketsList = () => dispatch => {
   Service.getBucketsList().then( ( res ) => {
       dispatch( setBucketItems( res.data ) )
   } ).catch(err => {
-      dispatch( setItemsError( err.response.data ) );
+      dispatch( setItemsError( err.response && err.response.data ) );
   })
 
 }

@@ -23,7 +23,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         items: [],
-        error: action.payload.Message,
+        error: (action.payload && action.payload.Message) || 'Error while fetching records',
         isLoading: false,
       }
     case SET_BUCKETS_LIST_LOADING:
